@@ -1,0 +1,16 @@
+[
+    {   "produit":"phone S1",
+        "prix" : " 1500"
+    },
+    {
+        "produit":"phone G12",
+        "prix" : " 3000"
+ 
+    },
+    {
+        "produit":"phone A26",
+        "prix" : " 2600"
+ 
+    }
+
+]
