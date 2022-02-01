@@ -1,5 +1,0 @@
-class Ouvrage{
-    titre;
-    id;
-      
-  }
