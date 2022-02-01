@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api</title>
+ </head>
+
+ <body>
+    <script>
+        var city = prompt()
+        var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=0bd0cd1e7d8ab7a578a5a4d28a57d45b`
+
+
+
+        fetch(url)
+            .then(function (reponse) {
+                return reponse.json()
+
+            })
+            .then(function (data) {
+
+                    var city = ("City :   " + data.name)
+
+                    var wind = ("Wind speed:  " + data.wind.speed)
+                    var sky = ('Weather:   ' + data.weather[0].description)
+
+
+                    document.write(city + "<br>" + sky + "<br>" + wind)
+
+                    console.log(data)
+            })
+        
+    </script>
+ </body>
+</html>
